@@ -11,6 +11,6 @@ public class HelloController {
     @ResponseBody
     public String hello()
     {
-        return "스프링부트 git 연결 test";
+        return "HelloWorld!";
     }
 }
