@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class HelloController {
+public class MainController {
 
-    @GetMapping("/hello")
+    @GetMapping("/sbb")
     @ResponseBody
-    public String hello()
+    public String index()
     {
-        return "liveReload!";
+      return "안녕하세요 sbb에 오신것을 환영합니다";
     }
 }
