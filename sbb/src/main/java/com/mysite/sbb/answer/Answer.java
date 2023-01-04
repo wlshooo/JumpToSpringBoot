@@ -10,19 +10,20 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
-public class Answer {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
 
-    @Column(columnDefinition = "TEXT")
-    private String content;
+    public class Answer {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Integer id;
 
-    private LocalDateTime createData;
+        @Column(columnDefinition = "TEXT")
+        private String content;
 
-    @ManyToOne
-    private Question question;
+        private LocalDateTime createDate;
+
+        @ManyToOne
+        private Question question;
 
 
 }
